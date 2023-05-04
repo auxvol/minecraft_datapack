@@ -1,0 +1,1 @@
+tellraw @a {"text": "執行成功", "color": "red","italic": true, "bold": true}
