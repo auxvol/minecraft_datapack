@@ -1,0 +1,12 @@
+execute as @s run function main:role/rolereset
+execute at @p run clear @s
+
+execute at @p run item replace entity @s armor.chest with iron_chestplate{Unbreakable:1,display:{Name:'[{"text":"","italic":false},{"text":"鋼鐵之軀","color":"white"}]'},AttributeModifiers:[{Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1653891708,1653891708,1653891708,1653891708]},{Slot:"chest",AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:0.2,Operation:0,UUID:[I;1653891707,1653891707,1653891707,1653891707]}]} 1
+execute at @p run item replace entity @s armor.legs with iron_leggings{Unbreakable:1,display:{Name:'[{"text":"","italic":false},{"text":"鋼鐵護腿","color":"white"}]'},AttributeModifiers:[{Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1653891826,1653891826,1653891826,1653891826]},{Slot:"legs",AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:0.2,Operation:0,UUID:[I;1653891825,1653891825,1653891825,1653891825]}]} 1
+execute at @p run item replace entity @s armor.feet with iron_boots{Unbreakable:1,display:{Name:'[{"text":"","italic":false},{"text":"鋼鐵腳鎧","color":"white"}]'},AttributeModifiers:[{Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1653891913,1653891913,1653891913,1653891913]},{Slot:"feet",AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:0.2,Operation:0,UUID:[I;1653891912,1653891912,1653891912,1653891912]}]} 1
+execute at @p run give @s poppy{Unbreakable:1,display:{Name:'[{"text":"","italic":false},{"text":"「善意」","color":"red"},{"text":"之象徵","color":"green"}]',Lore:['[{"text":"","italic":false},{"text":"平時總是舉著它向村民表示善意","color":"white"}]','[{"text":"","italic":false},{"text":"在戰鬥中便會將其拋下，以表敵意","color":"white"}]','[{"text":"","italic":false},{"text":"丟棄將周圍敵人震高 冷卻:7秒","color":"gray"}]']},AttributeModifiers:[{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10,Operation:0,UUID:[I;1653891552,1653891552,1653891552,1653891552]},{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3,Operation:0,UUID:[I;1653891551,1653891551,1653891551,1653891551]}],Enchantments:[{"id":"minecraft:protection","lvl":6},{"id":"minecraft:loyalty","lvl":6}]} 1
+
+execute at @p run scoreboard players set @s MAXHP 200
+give @s bread 64
+tag @s add iron_golem
+execute at @p run scoreboard players set @s role 10

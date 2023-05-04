@@ -1,0 +1,6 @@
+execute as @s run function main:role/rolereset
+execute at @p run clear @s
+execute at @p run give @s minecraft:grass_block{Unbreakable:1b,HideFlags:5,display:{Name:'[{"text":"","italic":false},{"text":"創","color":"dark_red","bold":true},{"text":"世","color":"gold","bold":true},{"text":"神","color":"dark_green","bold":true},{"text":"之","color":"dark_blue","bold":true},{"text":"力","color":"dark_purple","bold":true}]',Lore:['[{"text":"","italic":false},{"text":"史","color":"dark_red","bold":true},{"text":"上","color":"gold","bold":true},{"text":"最","color":"dark_green","bold":true},{"text":"強","color":"dark_blue","bold":true},{"text":"的","color":"dark_purple","bold":true},{"text":"神","color":"black","bold":true},{"text":"-[創世神]製作而成","color":"white","bold":true}]']},AttributeModifiers:[{Slot:"mainhand",AttributeName:"minecraft:generic.attack_damage",Name:"generic.attack_damage",Amount:999d,Operation:0,UUID:[I;1653748517,1653748517,1653748517,1653748517]}],Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
+execute at @p run scoreboard players set @s MAXHP 10
+give @s bread 64
+execute at @p run scoreboard players set @s role 25

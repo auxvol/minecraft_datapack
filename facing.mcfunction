@@ -1,0 +1,1 @@
+execute as @e[tag=facing] at @s facing entity @p[distance=..5] feet run teleport ~ ~ ~

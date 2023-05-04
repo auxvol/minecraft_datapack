@@ -1,0 +1,12 @@
+execute as @s run function main:role/rolereset
+execute at @p run clear @s
+
+execute at @p run item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b,display:{color:0,Name:'[{"text":"","italic":false},{"text":"黑色長袍","color":"dark_red"}]',Lore:['[{"text":"","italic":false},{"text":"在白天時用來遮擋陽光的長袍","color":"gray"}]']},AttributeModifiers:[{Slot:"chest",AttributeName:"minecraft:generic.armor",Name:"generic.armor",Amount:2d,Operation:0,UUID:[I;1654052905,1654052905,1654052905,1654052905]},{Slot:"chest",AttributeName:"minecraft:generic.armor_toughness",Name:"generic.armor_toughness",Amount:2d,Operation:0,UUID:[I;1654052904,1654052904,1654052904,1654052904]},{Slot:"chest",AttributeName:"minecraft:generic.movement_speed",Name:"generic.movement_speed",Amount:0.15d,Operation:1,UUID:[I;1654052903,1654052903,1654052903,1654052903]}]} 1
+
+execute at @p run item replace entity @s armor.feet with leather_boots{Unbreakable:1b,display:{color:11743532,Name:'[{"text":"","italic":false},{"text":"血族長靴","color":"dark_red"}]'},AttributeModifiers:[{Slot:"feet",AttributeName:"minecraft:generic.armor",Name:"generic.armor",Amount:2d,Operation:0,UUID:[I;1654053086,1654053086,1654053086,1654053086]},{Slot:"feet",AttributeName:"minecraft:generic.armor_toughness",Name:"generic.armor_toughness",Amount:2d,Operation:0,UUID:[I;1654053085,1654053085,1654053085,1654053085]},{Slot:"feet",AttributeName:"minecraft:generic.movement_speed",Name:"generic.movement_speed",Amount:0.1d,Operation:1,UUID:[I;1654053084,1654053084,1654053084,1654053084]}],Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute at @p run give @s iron_sword{Unbreakable:1b,display:{Name:'[{"text":"","italic":false},{"text":"鋒利的獠牙","color":"red"}]',Lore:['[{"text":"","italic":false},{"text":"發育特別發達的犬齒","color":"white"}]','[{"text":"","italic":false},{"text":"可以輕易撕裂他人的喉管","color":"white"}]','[{"text":"","italic":false},{"text":"造成傷害時回復20血量","color":"gray"}]']},AttributeModifiers:[{Slot:"mainhand",AttributeName:"minecraft:generic.attack_damage",Name:"generic.attack_damage",Amount:4d,Operation:0,UUID:[I;1654053463,1654053463,1654053463,1654053463]},{Slot:"offhand",AttributeName:"minecraft:generic.movement_speed",Name:"generic.movement_speed",Amount:0.1d,Operation:1,UUID:[I;1654053462,1654053462,1654053462,1654053462]}],Enchantments:[{id:"minecraft:looting",lvl:7s},{id:"minecraft:thorns",lvl:7s},{id:"minecraft:unbreaking",lvl:7s}]} 1
+
+execute at @p run scoreboard players set @s MAXHP 150
+tag @s add Vampire
+give @s bread 64
+execute at @p run scoreboard players set @s role 4
